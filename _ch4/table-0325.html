@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table type</title>
+<style>
+table,td,th{border: 0.125cm  solid hwb(92 9% 12% / 0.42);border-collapse: inherit;}
+table{width: 1.5dvi;}
+td,th{padding: 2ch; text-align: left;}
+th{background: hsla(152, 67%, 36%, 0.551) ;}
+thead{border-bottom: 0.25cm solid hwb(131 19% 33% / 0.598);}
+
+</style>
+</head>
+<body>
+  <table>
+    
+    <thead>
+      <tr>
+      <th colspan="2">th1</th>
+      <th>th3</th>
+      <th>th4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">td1-1</td>
+        <td>td1-2</td>
+        <td rowspan="2">td1-3</td>  
+        <td>td1-4</td>
+      </tr>
+
+  
+      <tr>
+        <td>td2-2</td>
+        <td>td2-4</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
