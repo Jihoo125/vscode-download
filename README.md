@@ -1,0 +1,4 @@
+Hello!
+This is the place that i upload the things learned on my conputer academy.
+Feel free to look or copy!
+also btw the main language is korean so tbh you need to learn basic korean to understand my files lol.
