@@ -9,15 +9,9 @@ import threading
 class ChangeHandler(FileSystemEventHandler):
     def on_any_event(self, event):
         try:
-            # Stage all changes
             subprocess.run(["git", "add", "."], check=True)
-            
-            # Commit changes with a message
             subprocess.run(["git", "commit", "-m", "Automated commit"], check=True)
-            
-            # Push changes to the main branch
             subprocess.run(["git", "push", "origin", "main"], check=True)
-            
             print("Changes pushed to GitHub.")
         except subprocess.CalledProcessError as e:
             print(f"Error during git operation: {e}")
@@ -43,10 +37,7 @@ if __name__ == "__main__":
         print(f"The specified path does not exist: {path}")
         exit(1)
 
-    # Start the directory monitoring in a separate thread
     monitor_thread = threading.Thread(target=monitor_directory, args=(path,))
     monitor_thread.start()
-
-    # Listen for the key combination to stop the script
     keyboard.wait('ctrl+alt+f8')
     print("Key combination detected. Stopping the script...")
