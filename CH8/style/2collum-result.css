@@ -20,7 +20,7 @@
 }
 #contents{
   width: 900px;
-  height: 600px;
+  height: auto;
   background-color: #f7f7f7;
   float: left;
 }
