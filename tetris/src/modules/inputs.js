@@ -8,7 +8,7 @@ let keys = {
   smackDown: 32,
   rotLeft: 38,
   rotRight: 90,
-  save: 69,
+  save: 67,
 };
 
 export const inputs = {
