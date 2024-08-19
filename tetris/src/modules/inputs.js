@@ -5,7 +5,7 @@ let keys = {
   left: 37,
   right: 39,
   down: 40,
-  smackDown: 38,
+  smackDown: 32,
   rotLeft: 65,
   rotRight: 90,
   save: 69,
