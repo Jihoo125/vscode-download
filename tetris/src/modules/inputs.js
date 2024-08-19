@@ -6,7 +6,7 @@ let keys = {
   right: 39,
   down: 40,
   smackDown: 32,
-  rotLeft: 65,
+  rotLeft: 38,
   rotRight: 90,
   save: 69,
 };
