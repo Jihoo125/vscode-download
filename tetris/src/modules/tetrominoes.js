@@ -143,7 +143,7 @@ export const tetromino = {
       this.draw();
     }
   },
-  drawPreview() {
+  drawPreview() {f
     console.log('drawing preview tetromino');
     playground.cleanPreviewGrid();
     this.next.tetromino.forEach((index) => {
