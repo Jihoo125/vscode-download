@@ -1,6 +1,6 @@
 print("Incheon Station");
 print("Suseo Station");
-print("Incheon Station");
+print("Songdo Station");
 print("Incheon Station");
 print("Incheon Station");
 print("Incheon Station");
