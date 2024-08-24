@@ -7,4 +7,4 @@ print("Wonju Station");
 print("Seowonju Station");
 print("Dunnae Station");
 print("Munmak Station");
-print("Incheon Station");
+print("Shin Station");
