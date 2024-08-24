@@ -10,4 +10,5 @@ print("Munmak Station");
 print("Suwon Station");
 if sa == "Songdo Station":
   print(sa)
-else
+else:
+  
