@@ -8,4 +8,5 @@ print("Seowonju Station");
 print("Dunnae Station");
 print("Munmak Station");
 print("Suwon Station");
-if sam == "Songdo Station"
+if sam == "Songdo Station":
+  
