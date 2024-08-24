@@ -1,2 +1,2 @@
 import cmd
-cmd.Cmd
+cmd.Cmd()
