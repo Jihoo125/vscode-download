@@ -9,4 +9,5 @@ print("Dunnae Station");
 print("Munmak Station");
 print("Suwon Station");
 if sa == "Songdo Station":
-  print()
+  print(sa)
+else
