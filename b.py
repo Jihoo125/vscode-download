@@ -1,4 +1,4 @@
 import email
 import email.generator
-1 == email.generator
+email.generator
 print(1)
