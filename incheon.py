@@ -12,4 +12,4 @@ def lo():
 if sa == "Songdo Station":
   print(sa)
 else:
-  
+  lo
