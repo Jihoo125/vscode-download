@@ -1,1 +1,1 @@
-print("");
+print("This stop is Samsung Station, Samsung Station.");
