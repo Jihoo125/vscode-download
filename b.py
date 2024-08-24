@@ -1,3 +1,3 @@
 import email
 import email.generator
-email.generator
+1 = email.generator
