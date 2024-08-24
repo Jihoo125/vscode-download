@@ -1,1 +1,1 @@
-print(""); print("This stop is Samseong (World Trade Center Seoul) Station, Samsung Station. The doors are on your left.");
+print("이번 역은 삼성(무역)"); print("This stop is Samseong (World Trade Center Seoul) Station, Samsung Station. The doors are on your left.");
