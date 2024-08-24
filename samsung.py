@@ -1,1 +1,1 @@
-prprint("This stop is Samseong (World Trade Center Seoul) Station, Samsung Station. The doors are on your left.");
+printprint("This stop is Samseong (World Trade Center Seoul) Station, Samsung Station. The doors are on your left.");
