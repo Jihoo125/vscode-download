@@ -1,2 +1,2 @@
 import cmd
-cmd.
+cmd.Cmd
