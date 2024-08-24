@@ -1,9 +1,9 @@
 def lo()
   print("Incheon Station");
   print("Suseo Station");
-print(sa = "Songdo Station");
-print("Seoul Station");
-print("Hangsin Station");
+  print(sa = "Songdo Station");
+  print("Seoul Station");
+  print("Hangsin Station");
 print("Wonju Station");
 print("Seowonju Station");
 print("Dunnae Station");
