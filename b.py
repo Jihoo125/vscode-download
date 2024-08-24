@@ -1,2 +1,2 @@
 import qrcode
-qrcode.
+qrcode.make
