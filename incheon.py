@@ -1,4 +1,4 @@
-def 1()
+def lo()
 print("Incheon Station");
 print("Suseo Station");
 print(sa = "Songdo Station");
