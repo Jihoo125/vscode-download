@@ -1,4 +1,4 @@
 import email
 import email.generator
-email.generator.Generator
+1 = email.generator.Generator
 print(1)
