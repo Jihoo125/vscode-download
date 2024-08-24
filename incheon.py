@@ -5,6 +5,6 @@ print("Seoul Station");
 print("Hangsin Station");
 print("Wonju Station");
 print("Seowonju Station");
-print("Incheon Station");
+print("Dunnae Station");
 print("Incheon Station");
 print("Incheon Station");
