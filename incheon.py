@@ -1,1 +1,10 @@
 print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
+print("Incheon Station");
