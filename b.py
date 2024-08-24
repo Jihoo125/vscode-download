@@ -1,2 +1,2 @@
 import qrcode
-qrcode.make()
+qrcode.make(v)
