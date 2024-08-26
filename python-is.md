@@ -1,1 +1,1 @@
-python is?
+def python is?
