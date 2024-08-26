@@ -3,4 +3,4 @@ def python is?():
   def nothing?():
     print("I don't know.")
     def lol():
-      print("help)
+      print("help")
