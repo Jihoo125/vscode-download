@@ -7,3 +7,4 @@ def python is?():
       def bruh():
         python is()
         nothing()
+        
