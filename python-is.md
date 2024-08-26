@@ -5,4 +5,5 @@ def python is?():
     def lol():
       print("help")
       def bruh():
-        python is
+        python is()
+        
