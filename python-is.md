@@ -4,4 +4,4 @@ def python is?():
     print("I don't know.")
     def lol():
       print("help")
-      def 
+      def v
