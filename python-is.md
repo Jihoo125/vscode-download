@@ -6,4 +6,4 @@ def python is?():
       print("help")
       def bruh():
         python is()
-        
+        nothing
