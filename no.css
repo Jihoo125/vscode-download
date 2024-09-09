@@ -9,5 +9,5 @@
 }
 div{
   border: 2px #adfc78fc;
-  box-sizing: ;
+  box-sizing: border-box;
 }
