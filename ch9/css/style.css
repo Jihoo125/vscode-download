@@ -7,5 +7,5 @@
   float: left;
 }
 #clip-border{
-  background-clip: ;
+  background-clip: border-box;
 }
