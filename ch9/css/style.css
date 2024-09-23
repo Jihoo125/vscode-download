@@ -22,7 +22,7 @@
   list-style: none;
 }
 .background-blit-ul>li{
-  ba
+  background-image: url();
 }
 .background-blit-ul{
   margin-left: -30px;
