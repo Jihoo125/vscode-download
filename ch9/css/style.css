@@ -12,6 +12,6 @@
 #clip-pudding{
   background-clip: padding-box;
 }
-#clip-border{
+#clip-conten{
   background-clip: border-box;
 }
