@@ -13,5 +13,5 @@
   background-clip: padding-box;
 }
 #clip-content{
-  background-clip: border-box;
+  background-clip: content-box;
 }
