@@ -8,4 +8,4 @@ def python is?():
         python is()
         nothing()
         lol()
-        bruh()
+bruh()
