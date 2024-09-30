@@ -34,6 +34,7 @@
   background-image: url(/ch9/image/OIP\ \(1\)\ \(1\).png);
   background-repeat: no-repeat;
   background-position: right top;
+  
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
