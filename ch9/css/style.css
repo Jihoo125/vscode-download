@@ -28,7 +28,7 @@
   width: 400px;
   height: 250px;
   padding: 20px;
-  border: 20px solid #0ad33366;
+  border: 20px solid rgba(10, 211, 51, 0.4);
   margin-bottom: 20px;
   overflow: auto;
   background-image: url(/ch9/image/tlqkf.png);
