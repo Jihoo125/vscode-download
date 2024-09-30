@@ -38,6 +38,7 @@
 #bg1{
   background-origin: padding-box;
 }
+
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
 }
