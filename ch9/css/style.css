@@ -21,7 +21,7 @@
 #img-apts{
   background-image: url(/ch9/image/CP-2023-0049-4429204-thumb.jpg);
   background-repeat: no-repeat;
-  background-position: right-top;
+  background-position: right top;
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
