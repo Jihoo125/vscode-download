@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit
+sys.setrecursionlimit(50)
 def python_is():
   print("Hi!")
   def nothing():
