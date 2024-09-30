@@ -42,7 +42,7 @@
   background-origin: border-box;
 }
 #bg3{
-  background-origin: ;
+  background-origin: content-box;
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
