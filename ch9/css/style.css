@@ -1,5 +1,5 @@
 .desc{
-  border: 5px dotted #7fda4f55;
+  border: 5px dotted #4e526ea5;
   background-color: #0ad33366;
   width: 350px;
   padding: 20px;
@@ -18,10 +18,10 @@
 #img{
   background-image: url(/ch9/image/d04편성신분당선전동차.png);
 }
-.background-blit-ul, .background-blit-ul>li{
+.background-blit-ul, .background-blit-ul > li{
   list-style: none;
 }
-.background-blit-ul>li{
+.background-blit-ul > li{
   background-image: url(/ch9/image/jihoo.png);
   background-repeat: no-repeat;
   background-position: left center;
