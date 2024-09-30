@@ -1,0 +1,59 @@
+.desc{
+  border: 5px dotted #4e526ea5;
+  background-color: #0ad33366;
+  width: 350px;
+  padding: 20px;
+  margin-right: 20px;
+  float: left;
+}
+#clip-border{
+  background-clip: border-box;
+}
+#clip-pudding{
+  background-clip: padding-box;
+}
+#clip-content{
+  background-clip: content-box;
+}
+#img{
+  background-image: url(/ch9/image/d04편성신분당선전동차.png);
+}
+#img-apts{
+  background-image: url(/ch9/image/jih.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+.bg{
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  border: 20px solid rgba(10, 211, 51, 0.4);
+  margin-bottom: 20px;
+  /* overflow: auto; */
+  background-image: url(/ch9/image/tlqkf.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#bg1{
+  background-origin: padding-box;
+}
+#bg2{
+  background-origin: border-box;
+}
+#bg3{
+  background-origin: content-box;
+}
+.background-blit-ul, .background-blit-ul > li{
+  list-style: none;
+}
+.background-blit-ul > li{
+  background-image: url(/ch9/image/jihoo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 50px;
+  line-height: 40px;
+}
+.background-blit-ul{
+  margin-left: -30px;
+}
