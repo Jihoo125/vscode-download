@@ -20,7 +20,7 @@
 }
 #img-apts{
   background-image: url(/ch9/image/CP-2023-0049-4429204-thumb.jpg);
-  backgrou
+  background-repeat: ;
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
