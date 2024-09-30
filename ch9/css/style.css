@@ -26,7 +26,8 @@
 }
 .bg{
   width: 400px;
-  height: ;
+  height: 250px;
+  
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
