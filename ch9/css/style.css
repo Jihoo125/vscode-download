@@ -28,6 +28,7 @@
   width: 400px;
   height: 250px;
   padding: 20px;
+  border: ;
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
