@@ -8,6 +8,6 @@ def python_is():
       print("help")
       def bruh():
       bruh()
-    nothing()
+    lol()
   lol()
 python_is()
