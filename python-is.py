@@ -7,7 +7,7 @@ def python_is():
     def lol():
       print("help")
       def bruh():
-      br
+      bruh()
         nothing()
         lol()
 bruh()
