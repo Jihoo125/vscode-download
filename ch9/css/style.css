@@ -28,7 +28,7 @@
   width: 400px;
   height: 250px;
   padding: 20px;
-  border: 20px solid rgba(red, green, blue, alpha);
+  border: 20px solid rgba(red, green, rgba(47, 47, 131, 0.565), alpha);
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
