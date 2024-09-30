@@ -39,7 +39,7 @@
   background-origin: padding-box;
 }
 #bg2{
-  ba
+  background-origin: ;
 }
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
