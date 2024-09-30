@@ -9,5 +9,5 @@ def python_is():
       def bruh():
       bruh()
     lol()
-  lol()
+  n()
 python_is()
