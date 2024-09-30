@@ -1,5 +1,5 @@
 import sys
-sys.re
+s
 def python_is():
   print("Hi!")
   def nothing():
@@ -10,3 +10,4 @@ def python_is():
         python_is()
         nothing()
         lol()
+bruh()
