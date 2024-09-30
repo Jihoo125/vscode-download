@@ -1,5 +1,5 @@
 import sys
-s
+sys.set
 def python_is():
   print("Hi!")
   def nothing():
