@@ -24,6 +24,7 @@
   background-position: right top;
   background-attachment: fixed;
 }
+
 .background-blit-ul, .background-blit-ul > li{
   list-style: none;
 }
