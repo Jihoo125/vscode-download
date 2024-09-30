@@ -10,4 +10,4 @@ def python_is():
       bruh()
     nothing()
   lol()
-bruh()
+python_is
