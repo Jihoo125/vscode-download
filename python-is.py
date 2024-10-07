@@ -6,7 +6,7 @@ def python_is():
     print("I don't know.")
     def lol():
       print("help")
-        def bruh():
+      def bruh():
         print("AHH")
       bruh()
     lol()
