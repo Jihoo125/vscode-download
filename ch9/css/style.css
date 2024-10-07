@@ -90,5 +90,5 @@
   height: 300px;
   border-radius: 10px;
     background: #4e526ea5;
-  background: linear-gradient(to right bottom);
+  background: linear-gradient(to right bottom, #);
 }
