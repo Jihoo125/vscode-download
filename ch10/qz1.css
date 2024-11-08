@@ -27,5 +27,5 @@ body{
 #signup label, #signup input{
     line-height: 30px;
     list-style: none;
-    pa
+    padding: auto;
 }
