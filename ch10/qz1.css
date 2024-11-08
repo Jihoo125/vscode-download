@@ -42,5 +42,5 @@ body{
 #signup label{
     width: 110px;
     float: left;
-    li
+    line-height: 1;
 }
