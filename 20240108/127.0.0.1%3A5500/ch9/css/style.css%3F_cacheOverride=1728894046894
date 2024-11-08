@@ -1,0 +1,104 @@
+.desc{
+  border: 5px dotted #4e526ea5;
+  background-color: #0ad33366;
+  width: 350px;
+  padding: 20px;
+  margin-right: 20px;
+  float: left;
+}
+#clip-border{
+  background-clip: border-box;
+}
+#clip-pudding{
+  background-clip: padding-box;
+}
+#clip-content{
+  background-clip: content-box;
+}
+#img{
+  background-image: url(/ch9/image/d04편성신분당선전동차.png);
+}
+#img-apts{
+  background-image: url(/ch9/image/jih.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+.bg{
+  width: 400px;
+  padding: 20px;
+  border: 20px solid rgba(10, 211, 51, 0.4);
+  margin-bottom: 20px;
+  background-image: url(/ch9/image/tlqkf.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#bg1{
+  background-origin: padding-box;
+}
+#bg2{
+  background-origin: border-box;
+}
+#bg3{
+  background-origin: content-box;
+}
+.background-blit-ul, .background-blit-ul > li{
+  list-style: none;
+}
+.background-blit-ul > li{
+  background-image: url(/ch9/image/jihoo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 50px;
+  line-height: 40px;
+}
+.background-blit-ul{
+  margin-left: -30px;
+}
+#container{
+  width: 1000px;
+  margin: 50px auto;
+}
+.box{
+  float: left;
+  border: 1px solid #0ad33366;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background: url(/ch9/image/d04편성신분당선전동차.webp);
+}
+#bg1a{
+  background-size: auto;
+}
+#bg2a{
+  background-size: 200px;
+}
+#bg3a{
+  background-size: 50%;
+}
+#bg4{
+  background-size: 100% 100%;
+}
+#bg5{
+  background-size: contain;
+}
+#bg6{
+  background-size: cover;
+}
+.grad{
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+    background: #4e526ea5;
+  background: linear-gradient(to right bottom, #44444aff, #00000afa);
+}
+.grad1{
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background: #02040afa;
+  background: linear-gradient(45deg, #02040afa, #42444aff);
+}
+body.linearrainbow{
+  background: linear-gradient(4deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #420082, #800080);
+}

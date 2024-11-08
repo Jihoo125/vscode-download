@@ -1,0 +1,13 @@
+.a{
+  background: -webkit-repeating-linear-gradient(77.5deg, #a2d254aa, #a37d48ad 10px, #adff4892 20px);
+}
+.b{
+  cursor: move;
+}
+.c{
+  color: #dcdc39af;
+}
+div{
+  border: 2px #adfc78fc;
+  box-sizing: border-box;
+}
