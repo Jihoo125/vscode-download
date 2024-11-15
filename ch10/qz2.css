@@ -56,5 +56,5 @@ body{
 }
 
 #signup input[readonly]{
-    
+    border: none;
 }
