@@ -51,4 +51,4 @@ body{
     padding: 5px;
     width: 200px;
 }
-#signup input[req]
+#signup input[:required]
