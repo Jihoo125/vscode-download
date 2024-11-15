@@ -55,4 +55,6 @@ body{
     border: 1px solid #1adf1dff;
 }
 
-#signup input[readonly]
+#signup input[readonly]{
+    
+}
