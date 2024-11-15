@@ -52,5 +52,5 @@ body{
     width: 200px;
 }
 #signup input[required]{
-    bo
+    border: 1px ;
 }
