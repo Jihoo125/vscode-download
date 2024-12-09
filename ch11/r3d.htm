@@ -3,44 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3D Rotations</title>
     <style>
-        #container{
+        #container {
             width: 800px;
             margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        .origin{
+        .origin {
             width: 100px;
             height: 100px;
-            float: left;
-            margin: 40px;
+            margin: 20px;
             border: 1px solid #1affcdee;
-            perspective: 200px;
+            perspective: 500px; /* Adds a 3D perspective for better visualization */
         }
-        .origin > div{
+        .origin > div {
             width: 100px;
             height: 100px;
             background-color: #9fadeeff;
-            transition: all 5000s;
         }
-        #rotatex{
-            transform: rotateX('55deg')
+        /* Keyframes for X-axis rotation */
+        @keyframes rotateX {
+            0% {
+                transform: rotateX(0deg);
+            }
+            100% {
+                transform: rotateX(360deg);
+            }
         }
-        #rotatey{
-            transform: rotateY('55deg')
+        /* Keyframes for Y-axis rotation */
+        @keyframes rotateY {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
         }
-        #rotatez{
-            transform: rotateX('55deg')
+        /* Keyframes for Z-axis rotation */
+        @keyframes rotateZ {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
         }
-        #rotatexyz{
-            transform: rotate3d(2.5, 1.2, -1.5, 55deg)
+        /* Keyframes for 3D rotation */
+        @keyframes rotateXYZ {
+            0% {
+                transform: rotate3d(2.5, 1.2, -1.5, 0deg);
+            }
+            100% {
+                transform: rotate3d(2.5, 1.2, -1.5, 360deg);
+            }
+        }
+        /* Applying animations */
+        #rotatex {
+            animation: rotateX 3s linear infinite;
+        }
+        #rotatey {
+            animation: rotateY 3s linear infinite;
+        }
+        #rotatez {
+            animation: rotateZ 3s linear infinite;
+        }
+        #rotatexyz {
+            animation: rotateXYZ 3s linear infinite;
         }
     </style>
 </head>
 <body>
-    <div class="origin"><div id="rotatex"></div>
-    <div class="origin"><div id="rotatey"></div>
-    <div class="origin"><div id="rotatez"></div>
-    <div class="origin"><div id="rotatexyz"></div>
+    <div id="container">
+        <div class="origin"><div id="rotatex"></div></div>
+        <div class="origin"><div id="rotatey"></div></div>
+        <div class="origin"><div id="rotatez"></div></div>
+        <div class="origin"><div id="rotatexyz"></div></div>
+    </div>
 </body>
 </html>
