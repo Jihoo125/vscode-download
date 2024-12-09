@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Continuous Rotation</title>
     <style>
-        #container{
+        #container {
             width: 800px;
             margin: 20px auto;
         }
-        .origin{
+        .origin {
             width: 100px;
             height: 100px;
             float: left;
             margin: 40px;
         }
-        #rotate1{
-            transform: rotate(40deg);
+        /* Keyframes for clockwise rotation */
+        @keyframes rotateClockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        #rotate2{
-            transform: rotate(-40deg);
+        /* Keyframes for counterclockwise rotation */
+        @keyframes rotateCounterclockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+        /* Applying animations */
+        #rotate1 {
+            animation: rotateClockwise 3s linear infinite;
+        }
+        #rotate2 {
+            animation: rotateCounterclockwise 3s linear infinite;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="origin" id="rotate1"><img src="./tree.jpg"></div>
-        <div class="origin" id="rotate2"><img src="./tree.jpg"></div>
+        <div class="origin" id="rotate1">
+            <img src="./tree.jpg" alt="Tree">
+        </div>
+        <div class="origin" id="rotate2">
+            <img src="./tree.jpg" alt="Tree">
+        </div>
     </div>
 </body>
 </html>
