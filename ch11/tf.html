@@ -23,16 +23,17 @@
             text-align: center;
             font-weight: bold;
             animation: grow-shrink 0.5s infinite;
+            position: relative; /* Needed to keep stacking context */
             z-index: 0; /* Divs stay below the image */
         }
 
         /* Image Styling */
         #ex img {
-            position: relative;
+            position: absolute;
             top: 0;
             left: 0;
-            width: 100%; /* Scales the image to fit the div width */
-            height: auto;
+            width: 100px; /* Matches the width of each div */
+            height: 50px; /* Matches the height of each div */
             transform: rotate(90deg);
             z-index: 2; /* Image stays on top of the divs */
             pointer-events: none; /* Prevents the image from blocking interactions with the divs */
@@ -68,12 +69,26 @@
 </head>
 <body>
     <div id="ex">
-        <img src="./pasta.jpg" alt="Foreground">
-        <div class="ease">ease</div>
-        <div class="linear">linear</div>
-        <div class="ease-in">ease-in</div>
-        <div class="ease-out">ease-out</div>
-        <div class="ease-in-out">ease-in-out</div>
+        <div class="ease">
+            <img src="./pasta.jpg" alt="Foreground">
+            ease
+        </div>
+        <div class="linear">
+            <img src="./pasta.jpg" alt="Foreground">
+            linear
+        </div>
+        <div class="ease-in">
+            <img src="./pasta.jpg" alt="Foreground">
+            ease-in
+        </div>
+        <div class="ease-out">
+            <img src="./pasta.jpg" alt="Foreground">
+            ease-out
+        </div>
+        <div class="ease-in-out">
+            <img src="./pasta.jpg" alt="Foreground">
+            ease-in-out
+        </div>
     </div>
 </body>
 </html>
