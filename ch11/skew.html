@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
+        #container {
             width: 600px;
             margin: 20px auto;
         }
@@ -21,22 +21,41 @@
             height: 100px;
             background-color: #9fadeeff;
         }
-        #skewx{
-            transform: skewX(30deg);
+
+        /* Animation Definitions */
+        @keyframes skewXAnimation {
+            0% { transform: skewX(0deg); }
+            50% { transform: skewX(30deg); }
+            100% { transform: skewX(0deg); }
         }
-        #skewy{
-            transform: skewY(15deg);
+        @keyframes skewYAnimation {
+            0% { transform: skewY(0deg); }
+            50% { transform: skewY(15deg); }
+            100% { transform: skewY(0deg); }
         }
-        #skeyxy{
-            transform: skew(-25deg, -15deg);
+        @keyframes skewXYAnimation {
+            0% { transform: skew(0deg, 0deg); }
+            50% { transform: skew(-25deg, -15deg); }
+            100% { transform: skew(0deg, 0deg); }
+        }
+
+        /* Apply Animations */
+        #skewx {
+            animation: skewXAnimation 3s infinite;
+        }
+        #skewy {
+            animation: skewYAnimation 3s infinite;
+        }
+        #skewxy {
+            animation: skewXYAnimation 3s infinite;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="origin"><div id="skewx"></div>
-        <div class="origin"><div id="skewy"></div>
-        <div class="origin"><div id="skewxy"></div>
+        <div class="origin"><div id="skewx"></div></div>
+        <div class="origin"><div id="skewy"></div></div>
+        <div class="origin"><div id="skewxy"></div></div>
     </div>
 </body>
 </html>
