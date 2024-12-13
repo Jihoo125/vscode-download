@@ -6,13 +6,12 @@
     <title>Document</title>
     <style>
         #ex {
-            position: relative;
             display: flex;
             flex-wrap: wrap;
+            gap: 10px;
         }
 
         #ex div {
-            float: left;
             width: 100px;
             height: 50px;
             margin: 5px 10px;
@@ -23,20 +22,16 @@
             text-align: center;
             font-weight: bold;
             animation: grow-shrink 0.5s infinite;
-            position: relative; /* Needed to keep stacking context */
-            z-index: 0; /* Divs stay below the image */
+            position: relative;
         }
 
         /* Image Styling */
         #ex img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100px; /* Matches the width of each div */
-            height: 50px; /* Matches the height of each div */
+            display: block;
+            width: 100px; /* Matches the div width */
+            height: 50px; /* Matches the div height */
+            margin: 0 auto; /* Centers the image */
             transform: rotate(90deg);
-            z-index: 2; /* Image stays on top of the divs */
-            pointer-events: none; /* Prevents the image from blocking interactions with the divs */
         }
 
         /* Keyframe animation */
