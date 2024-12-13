@@ -12,7 +12,7 @@
             position: relative;
         }
 
-        /* Styling for the images inside each div */
+        /* Styling for each div */
         #ex div {
             width: 100px;
             height: 50px;
@@ -25,17 +25,18 @@
             font-weight: bold;
             animation: grow-shrink 0.5s infinite;
             position: relative;
+            z-index: 1; /* Make sure divs are below the image */
         }
 
+        /* Styling for the image placed on top of each div */
         #ex div img {
-            width: 100px; /* Matches the div width */
-            height: 50px; /* Matches the div height */
+            width: 100px; /* Match the div width */
+            height: 50px; /* Match the div height */
             transform: rotate(90deg); /* Rotate the image */
-            margin-bottom: 5px; /* Space between the image and the div text */
-            position: absolute; /* Position the image above the div content */
-            top: 0; /* Align at the top of the div */
+            position: absolute; /* Position the image above the div */
+            top: -60px; /* Move the image above the div */
             left: 0;
-            z-index: 1; /* Ensure the image is on top */
+            z-index: 2; /* Make sure the image stays above the div content */
         }
 
         /* Keyframe animation for divs */
@@ -69,23 +70,23 @@
 <body>
     <div id="ex">
         <div class="ease">
-            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the text -->
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
             ease
         </div>
         <div class="linear">
-            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the text -->
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
             linear
         </div>
         <div class="ease-in">
-            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the text -->
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
             ease-in
         </div>
         <div class="ease-out">
-            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the text -->
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
             ease-out
         </div>
         <div class="ease-in-out">
-            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the text -->
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
             ease-in-out
         </div>
     </div>
