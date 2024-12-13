@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
+        .box {
             margin: 20px auto;
             height: 100px;
             width: 100px;
             background-color: #12afbdfd;
             border: 1px solid #adecd9be;
-            transition-property: width height;
-            transition-duration: 2s, 1s;
+            animation: grow-shrink 3s infinite;
         }
-        .box:hover{
-            width: 200px;
-            height: 100px;
+
+        @keyframes grow-shrink {
+            0%, 100% {
+                width: 100px;
+                height: 100px;
+            }
+            50% {
+                width: 200px;
+                height: 150px;
+            }
         }
     </style>
 </head>
