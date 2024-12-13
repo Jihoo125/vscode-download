@@ -6,12 +6,12 @@
     <title>Document</title>
     <style>
         #ex {
+            position: relative;
             display: flex;
             flex-wrap: wrap;
         }
 
         #ex div {
-            position: relative;
             float: left;
             width: 100px;
             height: 50px;
@@ -31,10 +31,10 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 10cm;
-            object-fit: contain; /* Scales the image to fit the div */
+            height: 100%;
+            object-fit: cover; /* Scales the image to fit the container */
             transform: rotate(90deg); /* Rotates the image 90 degrees */
-            z-index: -1; /* Ensures the image is behind the text */
+            z-index: -1; /* Ensures the image appears behind the divs */
         }
 
         /* Keyframe animation */
@@ -68,21 +68,11 @@
 <body>
     <div id="ex">
         <img src="./pasta.jpg" alt="Background">
-        <div class="ease">
-            ease
-        </div>
-        <div class="linear">
-            linear
-        </div>
-        <div class="ease-in">
-            ease-in
-        </div>
-        <div class="ease-out">
-            ease-out
-        </div>
-        <div class="ease-in-out">
-            ease-in-out
-        </div>
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
     </div>
 </body>
 </html>
