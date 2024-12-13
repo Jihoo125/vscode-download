@@ -31,10 +31,10 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            object-fit: cover; /* Scales the image to fit the container */
-            transform: rotate(90deg); /* Rotates the image 90 degrees */
-            z-index: -1; /* Ensures the image appears behind the divs */
+            height: auto;
+            transform: rotate(90deg);
+            z-index: 1; /* Ensures the image is on top of the divs */
+            pointer-events: none; /* Allows interactions with divs below the image */
         }
 
         /* Keyframe animation */
@@ -67,7 +67,7 @@
 </head>
 <body>
     <div id="ex">
-        <img src="./pasta.jpg" alt="Background">
+        <img src="./pasta.jpg" alt="Foreground">
         <div class="ease">ease</div>
         <div class="linear">linear</div>
         <div class="ease-in">ease-in</div>
