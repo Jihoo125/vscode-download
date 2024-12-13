@@ -23,18 +23,19 @@
             text-align: center;
             font-weight: bold;
             animation: grow-shrink 0.5s infinite;
+            z-index: 0; /* Divs stay below the image */
         }
 
         /* Image Styling */
         #ex img {
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 100%; /* Scales the image to fit the div width */
             height: auto;
             transform: rotate(90deg);
-            z-index: 1; /* Ensures the image is on top of the divs */
-            pointer-events: none; /* Allows interactions with divs below the image */
+            z-index: 2; /* Image stays on top of the divs */
+            pointer-events: none; /* Prevents the image from blocking interactions with the divs */
         }
 
         /* Keyframe animation */
