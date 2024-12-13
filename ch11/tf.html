@@ -6,6 +6,7 @@
     <title>Document</title>
     <style>
         #ex {
+            position: relative;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -23,15 +24,18 @@
             font-weight: bold;
             animation: grow-shrink 0.5s infinite;
             position: relative;
+            z-index: 1; /* Make sure divs are below the image */
         }
 
         /* Image Styling */
         #ex img {
-            display: block;
-            width: 100px; /* Matches the div width */
-            height: 50px; /* Matches the div height */
-            margin: 0 auto; /* Centers the image */
-            transform: rotate(90deg);
+            position: absolute;
+            top: 0; /* Positions image on top of the divs */
+            left: 0;
+            width: 100%; /* Makes the image the same width as the container */
+            height: auto;
+            transform: rotate(90deg); /* Rotates image 90 degrees */
+            z-index: 0; /* Ensures image stays below the divs */
         }
 
         /* Keyframe animation */
@@ -64,26 +68,12 @@
 </head>
 <body>
     <div id="ex">
-        <div class="ease">
-            <img src="./pasta.jpg" alt="Foreground">
-            ease
-        </div>
-        <div class="linear">
-            <img src="./pasta.jpg" alt="Foreground">
-            linear
-        </div>
-        <div class="ease-in">
-            <img src="./pasta.jpg" alt="Foreground">
-            ease-in
-        </div>
-        <div class="ease-out">
-            <img src="./pasta.jpg" alt="Foreground">
-            ease-out
-        </div>
-        <div class="ease-in-out">
-            <img src="./pasta.jpg" alt="Foreground">
-            ease-in-out
-        </div>
+        <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed here -->
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
     </div>
 </body>
 </html>
