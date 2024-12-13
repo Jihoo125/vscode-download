@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #ex div{
+        #ex div {
             float: left;
             width: 100px;
             height: 50px;
@@ -16,24 +16,34 @@
             border-radius: 5px;
             text-align: center;
             font-weight: bold;
+            animation: grow-shrink 3s infinite;
         }
-        #ex:hover div{
-            height: 400px;
+
+        /* Keyframe animation */
+        @keyframes grow-shrink {
+            0%, 100% {
+                height: 50px;
+            }
+            50% {
+                height: 400px;
+            }
         }
-        #ex .ease{
-            transition: 3s ease;
+
+        /* Different easing options for each div */
+        #ex .ease {
+            animation-timing-function: ease;
         }
-        #ex .linear{
-            transition: 3s linear;
+        #ex .linear {
+            animation-timing-function: linear;
         }
-        #ex .ease-in{
-            transition: 3s ease-in;
+        #ex .ease-in {
+            animation-timing-function: ease-in;
         }
-        #ex .ease-out{
-            transition: 3s ease-out;
+        #ex .ease-out {
+            animation-timing-function: ease-out;
         }
-        #ex .ease-in-out{
-            transition: 3s ease-in-out;
+        #ex .ease-in-out {
+            animation-timing-function: ease-in-out;
         }
     </style>
 </head>
