@@ -9,6 +9,18 @@
             margin: 0;
             height: 2000px; /* Makes the page long enough to scroll */
             font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        /* Main Image to fill the unused space at the top */
+        #main {
+            position: fixed; /* Keep the image fixed at the top */
+            top: 0;
+            left: 0;
+            width: 100%; /* Fill the full width */
+            height: 50vh; /* Fill the top half of the viewport height */
+            object-fit: cover; /* Ensures the image covers the space without stretching */
+            z-index: -1; /* Place the image behind the content */
         }
 
         p, img {
@@ -28,12 +40,11 @@
             transition: transform 0.3s ease-in-out;
         }
 
-        /* Basic scroll animation */
         p, img {
             transform: translateY(0);
         }
 
-        /* Apply translation to p and img as you scroll */
+        /* Add scroll effect for elements below */
         body {
             animation: moveOnScroll 5s infinite;
         }
