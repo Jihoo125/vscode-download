@@ -21,7 +21,7 @@
     #opt2{
         align-content: flex-end;
     }
-    
+
     </style>
 </head>
 <body>
@@ -55,11 +55,15 @@
         <div class="box"><p>3</p></div>
         <div class="box"><p>4</p></div>
       </div>    
-      <div class="container" id="opt6">
-        <div class="box"><p>1</p></div>
-        <div class="box"><p>2</p></div>
-        <div class="box"><p>3</p></div>
-        <div class="box"><p>4</p></div>
-      </div>  
+    .container {
+      float:left;
+      width:200px;
+      height:150px;
+      display:flex;          /* 플렉스 컨테이너 지정 */
+      flex-flow: row wrap;   /* 왼쪽에서 오른쪽, 여러 줄 표시 */
+      border:1px solid #222;
+      background-color:#eee;
+      margin:30px;
+    }
 </body>
 </html>
