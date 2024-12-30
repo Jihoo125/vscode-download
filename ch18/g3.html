@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper1{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        #wrapper2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        h1{
+            font-size: 24px;
+        }
+        .items{
+            padding: 15px;
+            background-color: #4768afdc;
+        }
+        .items:nth-child(odd){
+            background-color: #78adcf8f;
+        }
+    </style>
+</head>
+<body>
+    <h1>autoFIT!!!</h1>
+    <div id="wrapper1">
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+    </div>   <h1>autoFILL!!!</h1>
+    <div id="wrapper2">
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+        <div class="items">abdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabdabd</div>
+    </div>
+</body>
+</html>
