@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #a7fc3dfe;
+    font-size: 16px;
+}
+#whopper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+.card{
+    background-color: #789afced;
+    box-shadow: 0 1px 5px #18fdcaed;
+}
+.card > header{
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+.card > p{
+    padding: 0.5rem;
+    line-height: 1.6em;
+}
+.card > img{
+    max-width: 100%;
+}
