@@ -3,4 +3,5 @@ var birthYear;
 var age;
 
 birthYear = prompt("what year are you born(YYYY)")
-age = curr
+age = currentYear - birthYear = 1;
+domc
