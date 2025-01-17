@@ -3,5 +3,5 @@ var birthYear;
 var age;
 
 birthYear = prompt("what year are you born(YYYY)")
-age = currentYear - birthYear = 1;
+age = currentYear - birthYear + 1;
 document.write(currentYear + "year<br>in " + birthYear + "it is " + age + "years old");
