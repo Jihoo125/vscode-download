@@ -3,3 +3,4 @@ var birthYear;
 var age;
 
 birthYear = prompt("what year are you born(YYYY)")
+age = curr
