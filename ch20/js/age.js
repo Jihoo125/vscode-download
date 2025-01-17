@@ -1,2 +1,2 @@
 var currentYear = new Date().getFullYear();
-var
+var birthYear
