@@ -1,1 +1,1 @@
-console.log("j1tet ch20 essens")
+console.log("j1tet ch20 essentials loaded")
