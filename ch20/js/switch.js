@@ -1,1 +1,1 @@
-var sess
+var session = prompt("")
