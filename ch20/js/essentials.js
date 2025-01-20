@@ -8,3 +8,10 @@ function copyToClipboard(text) {
         console.error('Failed to copy', err);
     });
 }
+function formatDate(date) {
+    return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+}
