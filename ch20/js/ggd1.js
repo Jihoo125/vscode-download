@@ -1,5 +1,5 @@
 var i, x, y;
-var y = prompt("며")
+var y = prompt("몇단")
 		
 for (i = 1; i <= 9; i++) {
     document.write("<h3>" + i + "단</h3>");
