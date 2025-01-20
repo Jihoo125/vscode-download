@@ -1,5 +1,5 @@
 var x = 0;
 x += (1 + 2 + 3 + 4 + 5);
-document.write("1 + 2 + 3 + 4 + 5<br>   =  <br>${sum}");
+document.write("1 + 2 + 3 + 4 + 5<br>   =  <br>${x}");
 var i;
 var y
