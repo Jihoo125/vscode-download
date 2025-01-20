@@ -14,4 +14,4 @@ else{
     msg = "you didnt enter number bruh"
 }
 
-alert()
+alert(msg)
