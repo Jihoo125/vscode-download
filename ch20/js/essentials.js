@@ -1,2 +1,2 @@
 console.log("j1tet ch20 essentials loaded");
-console.log("https://github.com/jihoo125/vscode-download/ch20/js/ess")
+console.log("https://github.com/jihoo125/vscode-download/ch20/js/essentials")
