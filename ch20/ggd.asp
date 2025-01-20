@@ -7,6 +7,6 @@
 </head>
 <body>
     <script src="./js/essentials.js"></script>
-    <script src="./js/.js"></script>
+    <script src="./js/ggd1.js"></script>
 </body>
 </html>
