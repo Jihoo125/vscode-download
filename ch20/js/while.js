@@ -11,5 +11,5 @@ if ( x !== null){
     msg = x + "! =" + xFactorialSampleTotallyNotRealUseCasesFrISwear;
 }
 else{
-    msg = "you didnt enter "
+    msg = "you didnt enter num"
 }
