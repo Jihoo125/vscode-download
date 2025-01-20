@@ -6,6 +6,6 @@ if ( x !== null){
 
     while (i <= x){
         xFactorialSampleTotallyNotRealUseCasesFrISwear *= i;
-        i
+        i++;
     }
 }
