@@ -4,7 +4,7 @@ var z = prompt("몇단까지")
 		
 for (z = 1; z <= 9; z++) {
     document.write("<h3>" + z + "단</h3>");
-    for (x = 1; x <= y; x++) {
+    for (x = 1; z <= y; x++) {
         document.write(z +" X " + x + " = " + i*x + "<br>");
     }
 }
