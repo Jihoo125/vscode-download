@@ -4,5 +4,5 @@ document.write("1 + 2 + 3 + 4 + 5<br>   =  <br>${x}");
 var i;
 var y = 0;
 for (i = 1; 1 < 6; i++){
-    
+    y +
 }
