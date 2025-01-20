@@ -8,7 +8,7 @@ if ( x !== null){
         xFactorialSampleTotallyNotRealUseCasesFrISwear *= i;
         i++;
     }
-    msg = n + "! =" + xFactorialSampleTotallyNotRealUseCasesFrISwear;
+    msg = x + "! =" + xFactorialSampleTotallyNotRealUseCasesFrISwear;
 }
 else{
     msg = ""
