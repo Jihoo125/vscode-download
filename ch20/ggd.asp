@@ -7,5 +7,6 @@
 </head>
 <body>
     <script src="./js/essentials.js"></script>
+    <script src="./js/essentials.js"></script>
 </body>
 </html>
