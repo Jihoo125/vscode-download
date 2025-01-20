@@ -1,1 +1,1 @@
-var x = pro
+var x = prompt("enter a numebr")
