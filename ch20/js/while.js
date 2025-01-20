@@ -12,3 +12,6 @@ if ( x !== null){
 }
 else{
     msg = "you didnt enter number bruh"
+}
+
+document.write
