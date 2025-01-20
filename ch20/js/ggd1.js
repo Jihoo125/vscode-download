@@ -1,4 +1,4 @@
-var i, x, y;
+var i, x, y, z;
 var y = prompt("몇단까지")
 var z = prompt("몇단까지")
 		
