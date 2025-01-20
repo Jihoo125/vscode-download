@@ -1,1 +1,1 @@
-var sum 
+var sum = 0;
