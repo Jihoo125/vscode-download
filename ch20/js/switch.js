@@ -4,5 +4,5 @@ switch(session){
     case "1" : document.write("<p>뭐1</p>");
     case "2" : document.write("<p>뭐2</p>");
     case "3" : document.write("<p>뭐3</p>");
-    default : alert("")
+    default : alert("뭐 -1")
 }
