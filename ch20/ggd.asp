@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./j"></script>
+    <script src="./js/essentials.js"></script>
 </body>
 </html>
