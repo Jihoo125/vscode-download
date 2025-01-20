@@ -1,1 +1,2 @@
-var session = prompt("선택해 임마")
+var session = prompt("선택해 임마");
+
