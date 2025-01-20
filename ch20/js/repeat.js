@@ -6,4 +6,4 @@ var y = 0;
 for (i = 1; 1 < 6; i++){
     y += 1
 }
-document.write("1 + 2 + 3 + 4 + 5<br>   =  <br>${x}");
+document.write("1 + 2 + 3 + 4 + 5<br>   =  <br>${y}");
