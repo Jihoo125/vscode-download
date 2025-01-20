@@ -1,4 +1,5 @@
-var i, x.;
+var i, x, y;
+
 		
 for (i = 1; i <= 9; i++) {
     document.write("<h3>" + i + "단</h3>");
