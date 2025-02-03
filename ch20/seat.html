@@ -40,12 +40,28 @@
     <div class="container" id="seatContainer"></div>
 
     <script>
-        var memNum = parseInt(prompt("Total number of humans?"));
-        var rowNum = parseInt(prompt("How many rows?"));
-        var colNum = parseInt(prompt("How many humans per row?"));
+        function getRowLabel(index) {
+            let label = "";
+            while (index >= 0) {
+                label = String.fromCharCode(65 + (index % 26)) + label;
+                index = Math.floor(index / 26) - 1;
+            }
+            return label;
+        }
+
+        var humanCount = parseInt(prompt("Total number of humans?"));
+        var rowNum = parseInt(prompt("How many rows? (Enter 0 to auto-calculate)"));
+        var colNum = parseInt(prompt("How many humans per row? (Enter 0 to auto-calculate)"));
+
+        // Auto-calculate missing value
+        if (rowNum === 0 && colNum > 0) {
+            rowNum = Math.ceil(humanCount / colNum);
+        } else if (colNum === 0 && rowNum > 0) {
+            colNum = Math.ceil(humanCount / rowNum);
+        }
 
         var totalSeats = rowNum * colNum; // Max seats possible
-        var emptySeats = totalSeats - memNum; // Calculate empty seats
+        var emptySeats = totalSeats - humanCount; // Calculate empty seats
 
         var container = document.getElementById("seatContainer");
         var maxRadius = 40; // Maximum radius in vmin
@@ -54,6 +70,7 @@
         var seatCounter = 1; // Track assigned seats
 
         for (let r = 0; r < rowNum; r++) {
+            let rowLabel = getRowLabel(r); // Get A, B, C, ..., AA, AB, etc.
             let radius = minRadius + (maxRadius - minRadius) * (r / (rowNum - 1)); // Increase radius per row
 
             for (let s = 0; s < colNum; s++) {
@@ -66,8 +83,8 @@
                 seat.style.left = `${x}vmin`;
                 seat.style.top = `${y}vmin`;
 
-                if (seatCounter <= memNum) {
-                    seat.innerText = `Seat ${seatCounter}`;
+                if (seatCounter <= humanCount) {
+                    seat.innerText = `${rowLabel}${s + 1}`;
                     seatCounter++;
                 } else {
                     seat.classList.add("empty"); // Mark as empty
