@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Map - Ring Layout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            width: 80vmin;
+            height: 80vmin;
+        }
+        .seat {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #47ade382;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seat Map (Ring Layout)</h1>
+    <div class="container" id="seatContainer"></div>
+
+    <script>
+        var memNum = prompt("How many humans?");
+        memNum = parseInt(memNum);
+
+        var container = document.getElementById("seatContainer");
+        var radius = 35; // Radius percentage (adjustable)
+        var centerX = 40; // Center X position (percentage)
+        var centerY = 40; // Center Y position (percentage)
+
+        for (let i = 0; i < memNum; i++) {
+            let angle = (i / memNum) * (2 * Math.PI);
+            let x = centerX + radius * Math.cos(angle);
+            let y = centerY + radius * Math.sin(angle);
+
+            let seat = document.createElement("div");
+            seat.className = "seat";
+            seat.style.left = `${x}vmin`;
+            seat.style.top = `${y}vmin`;
+            seat.innerText = `Seat ${i + 1}`;
+            container.appendChild(seat);
+        }
+    </script>
+</body>
+</html>
