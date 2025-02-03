@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seat Map - Ring Layout</title>
+    <title>Stadium Seat Map</title>
     <style>
         body {
             display: flex;
@@ -15,46 +15,66 @@
         }
         .container {
             position: relative;
-            width: 80vmin;
-            height: 80vmin;
+            width: 90vmin;
+            height: 90vmin;
         }
         .seat {
             position: absolute;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background: #47ade382;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            font-size: 12px;
             font-weight: bold;
+        }
+        .empty {
+            background: rgba(71, 173, 227, 0.3); /* Faded for empty seats */
         }
     </style>
 </head>
 <body>
-    <h1>Seat Map (Ring Layout)</h1>
+    <h1>Stadium Seat Map</h1>
     <div class="container" id="seatContainer"></div>
 
     <script>
-        var memNum = prompt("How many humans?");
-        memNum = parseInt(memNum);
+        var memNum = parseInt(prompt("Total number of humans?"));
+        var rowNum = parseInt(prompt("How many rows?"));
+        var colNum = parseInt(prompt("How many humans per row?"));
+
+        var totalSeats = rowNum * colNum; // Max seats possible
+        var emptySeats = totalSeats - memNum; // Calculate empty seats
 
         var container = document.getElementById("seatContainer");
-        var radius = 35; // Radius percentage (adjustable)
-        var centerX = 40; // Center X position (percentage)
-        var centerY = 40; // Center Y position (percentage)
+        var maxRadius = 40; // Maximum radius in vmin
+        var minRadius = 10; // Minimum inner radius
 
-        for (let i = 0; i < memNum; i++) {
-            let angle = (i / memNum) * (2 * Math.PI);
-            let x = centerX + radius * Math.cos(angle);
-            let y = centerY + radius * Math.sin(angle);
+        var seatCounter = 1; // Track assigned seats
 
-            let seat = document.createElement("div");
-            seat.className = "seat";
-            seat.style.left = `${x}vmin`;
-            seat.style.top = `${y}vmin`;
-            seat.innerText = `Seat ${i + 1}`;
-            container.appendChild(seat);
+        for (let r = 0; r < rowNum; r++) {
+            let radius = minRadius + (maxRadius - minRadius) * (r / (rowNum - 1)); // Increase radius per row
+
+            for (let s = 0; s < colNum; s++) {
+                let angle = (s / colNum) * (2 * Math.PI);
+                let x = 45 + radius * Math.cos(angle);
+                let y = 45 + radius * Math.sin(angle);
+
+                let seat = document.createElement("div");
+                seat.className = "seat";
+                seat.style.left = `${x}vmin`;
+                seat.style.top = `${y}vmin`;
+
+                if (seatCounter <= memNum) {
+                    seat.innerText = `Seat ${seatCounter}`;
+                    seatCounter++;
+                } else {
+                    seat.classList.add("empty"); // Mark as empty
+                }
+
+                container.appendChild(seat);
+            }
         }
     </script>
 </body>
