@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+    const synth = window.speechSynthesis // 설정하다 TTS
+let ourText = "message" //메시지 넣다
+const utterThis = new SpeechSynthesisUtterance(ourText) // TTS 설정하다
+synth.speak(utterThis) // TTS 말하다
 </body>
 </html>
