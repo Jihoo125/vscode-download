@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bpnum = parseInt(prompt("박병호의 등번호를 입력해줘~!"));
+        if (bpnum !== null){
+            if (bpnum === 59 || bpnum === 52){
+                document.write("와우~~ 박병호의 등번호를 잘 맞추셨군요!")
+                const synth = window.speechSynthesis
+                let ourText = "와우! 박병호의 등번호를 잘 맞추셨군요!"
+                const utterThis = new SpeechSynthesisUtterance(ourText) 
+
+                synth.speak(utterThis)
+                // 출처: https://sisiblog.tistory.com/316 [달삼쓰뱉:티스토리]
+            }
+            else{
+                document.write("응 틀림 ㅅㄱ")
+                const synth = window.speechSynthesis
+                let ourText = "응 틀림 수고"
+                const utterThis = new SpeechSynthesisUtterance(ourText) 
+
+                synth.speak(utterThis)
+                // 출처: https://sisiblog.tistory.com/316 [달삼쓰뱉:티스토리]
+            }
+        }
+    </script>
+</body>
+</html>

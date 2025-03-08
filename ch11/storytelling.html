@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        p, img{
+            position: sticky;
+            transition: transform 0.3s ease-in-out;
+        }
+        p::before, img::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            z-index: -1;
+            animation: moveOnScroll 3s ease-in-out infinite;
+        }
+        @keyframes moveOnScroll{
+            0%{
+                transform: translateZ(0);
+            }
+            100%{
+                transform: translate(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: xx-large; font-weight: bolder;"><big>Windows 7 SP1 success!</big></p>
+    <img src="./1733736628523.jpg" style="width: 200px; height: auto;">
+    <p style="font-size: x-large;">Specifications:</p>
+    <p style="font-size: x-large;">Motherboard:</p>
+    <p style="font-size: large;">ASRock H310CM-HDV</p>
+    <p style="font-size: x-large;">CPU:</p>
+    <p style="font-size: large;">Intel Celeron G4900</p>
+    <p style="font-size: x-large;">GPU:</p>
+    <p style="font-size: large;">Intel Graphics UHD 610</p>
+    <p style="font-size: x-large;">RAM:</p>
+    <p style="font-size: large;">Samsung DDR4-2400 4GB (4GB*1)</p>
+    <p style="font-size: x-large;">HDD:</p>
+    <p style="font-size: large;">WDC WDS120G1GOA-00SS50 120GB</p>
+</body>
+</html>

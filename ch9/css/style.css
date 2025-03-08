@@ -1,0 +1,157 @@
+.desc{
+  border: 5px dotted #4e526ea5;
+  background-color: #0ad33366;
+  width: 350px;
+  padding: 20px;
+  margin-right: 20px;
+  float: left;
+}
+#clip-border{
+  background-clip: border-box;
+}
+#clip-pudding{
+  background-clip: padding-box;
+}
+#clip-content{
+  background-clip: content-box;
+}
+#img{
+  background-image: url(/ch9/image/d04편성신분당선전동차.png);
+}
+#img-apts{
+  background-image: url(/ch9/image/jih.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+.bg{
+  width: 400px;
+  padding: 20px;
+  border: 20px solid rgba(10, 211, 51, 0.4);
+  margin-bottom: 20px;
+  background-image: url(/ch9/image/tlqkf.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#bg1{
+  background-origin: padding-box;
+}
+#bg2{
+  background-origin: border-box;
+}
+#bg3{
+  background-origin: content-box;
+}
+.background-blit-ul, .background-blit-ul > li{
+  list-style: none;
+}
+.background-blit-ul > li{
+  background-image: url(/ch9/image/jihoo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 50px;
+  line-height: 40px;
+}
+.background-blit-ul{
+  margin-left: -30px;
+}
+#container{
+  width: 1000px;
+  margin: 50px auto;
+}
+.box{
+  float: left;
+  border: 1px solid #0ad33366;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background: url(/ch9/image/d04편성신분당선전동차.webp);
+}
+#bg1a{
+  background-size: auto;
+}
+#bg2a{
+  background-size: 200px;
+}
+#bg3a{
+  background-size: 50%;
+}
+#bg4{
+  background-size: 100% 100%;
+}
+#bg5{
+  background-size: contain;
+}
+#bg6{
+  background-size: cover;
+}
+.grad{
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+    background: #4e526ea5;
+  background: linear-gradient(to right bottom, #44444aff, #00000afa);
+}
+.grad1{
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  background: #02040afa;
+  background: linear-gradient(45deg, #02040afa, #42444aff);
+}
+div.linearrainbow{
+  background: linear-gradient(to right bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #420082, #800080 50%); 
+  width: 800px;
+  height: 400px;
+}
+div.grad_all{
+  width: 500px;
+  height: 300px;
+  border: 1px solid #222;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+div.grad_a{
+  background: #010afa90;
+  background: repeating-linear-gradient(#010afa90, #4e526ea5 15px);
+}
+div.grad_b{
+  background: #0ad33366;
+  background: repeating-radial-gradient(circle, #42444aff, #00000afa 7.5px);
+}
+div.grad_c{
+  background: #00000afa;
+  background: repeating-linear-gradient(#42444aff, #02040afa 12.5px, #0ad33366 12.5px, #018664ff 15px);
+}
+div.grad_d{
+  background: #4e526ea5;
+  background: repeating-radial-gradient(circle, #018664ff, #42444aff 7.5%, #02040afa 10%, #010afa90 15%);
+}
+.talctr{
+  text-align: center;
+}
+#container_a{
+  margin: 0 auto;
+  width: 600px;
+  height: 447px;
+  border: 1px dotted #44444aff;
+  padding: 22.5px;
+  background: url(/ch9/image/d04편성신분당선전동차.png);
+}
+h1.h1{
+  padding: 22.5px;
+}
+h2.h2{
+  font-style: italic;
+  margin-bottom: 47.5px;
+}
+h3.h3{
+  color: #00000afa;
+}
+ul.ul{
+  margin: 20px;
+  list-style-type: none;
+}
+li.li{
+  line-height: 30px;
+}

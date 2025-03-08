@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .contaniter{
+      width:450px;
+      height:150px;
+      background-color:#eee;
+      border:1px solid #222;
+      margin-bottom:20px;
+      display:flex;
+      align-items: center;
+    }                                        
+    .bix{
+      padding:5px 45px;
+      margin:5px;   
+      background-color:#222;   
+    }
+    #bix1{
+      align-self: flex-start;
+    }
+    #bix3{
+      align-self:stretch;
+    }
+    p{
+      color:#fff;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="contaniter">
+        <div class="bix" id="bix1"><p>1</p></div>
+        <div class="bix"><p>2</p></div>
+        <div class="bix" id="bix3"><p>3</p></div>
+        <div class="bix"><p>4</p></div>
+    </div>
+</body>
+</html>

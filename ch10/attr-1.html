@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+            ul li{
+                width: 120px;
+                display: inline-block;
+                margin: 10px;
+            }
+                ul li a{
+                    padding: 5px 20px;
+                    font-size: 14px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                ul li a[href="./attr-1.html"]{
+                    background: #123456aa;
+                    border: 2px #333aafff;
+                    font-weight: normal;
+                }
+                ul li a[class="on"]{
+                    background: #923456aa;
+                    border: 2px #833aafff;
+                    font-style: italic;
+                }
+                ul li a[class="off"]{
+                    background: #1100ffaa;
+                    border: 2px #ff0000c2;
+                    font-weight: 900;
+                }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>test1</a></li>
+        <li><a href=".?1=l" class="on">test2-1a</a></li>
+        <li><a href=".?2=l" class="on off">test2-1</a></li>
+        <li><a href="./attr-1.html" class="off">test2-1b</a></li>
+        <li><a href="./attr-1.html">test2</a></li>
+    </ul>
+</body>
+</html>

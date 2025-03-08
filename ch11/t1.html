@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 20px auto;
+            height: 100px;
+            width: 100px;
+            background-color: #12afbdfd;
+            border: 1px solid #adecd9be;
+            animation: grow-shrink 0.00005s infinite;
+
+        }
+
+        @keyframes grow-shrink {
+            0%, 100% {
+                width: 100px;
+                height: 100px;
+                transition-property: width height;
+                transition-duration: 0.75s, 0.5s;
+            }
+            50% {
+                width: 2000px;
+                height: 1500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

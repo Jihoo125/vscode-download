@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #h1 {
+            color: #0908adef;
+        }
+        #p {
+            color: #a3af5def;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">js</h1>
+    <p id="p">click #h1</p>
+
+    <script>
+        var h1 = document.querySelector('#h1');
+        h1.onclick = function() {
+            if (h1.style.color === "rgb(29, 207, 250)") {
+                h1.style.color = "#0908adef";
+            } else {
+                h1.style.color = "#1dcefa98";
+            }
+        }
+    </script>
+</body>
+</html>

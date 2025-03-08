@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Rotation</title>
+    <style>
+        #container {
+            width: 800px;
+            margin: 20px auto;
+        }
+        .origin {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 40px;
+        }
+        /* Keyframes for clockwise rotation */
+        @keyframes rotateClockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Keyframes for counterclockwise rotation */
+        @keyframes rotateCounterclockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+        /* Applying animations */
+        #rotate1 {
+            animation: rotateClockwise 0.00001s linear infinite;
+        }
+        #rotate2 {
+            animation: rotateCounterclockwise 0.00001s linear infinite;
+        }
+        img {
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="origin" id="rotate1">
+            <img src="./th.jpg" width="7680px" height="4320px" alt="Tree">
+        </div>
+        <div class="origin" id="rotate2">
+            <img src="./th.jpg" width="7680px" height="4320px" alt="Tree">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: #84acdff5;
+            border: 1px solid #784afced;
+            margin-bottom: 10px;
+        }
+        #opt1{
+            flex-flow: row wrap;
+        }
+        #opt2{
+            flex-flow: row nowrap;
+        }
+        .box{
+            padding: 5px 45px;
+            margin: 5px;
+            background-color: #41dfcd5f;
+        }
+        p{
+            color: #1b1a7eb0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="opt1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <div class="container" id="opt2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <img src="./images/flex2-speed.jpg">
+</body>
+</html>

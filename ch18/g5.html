@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #whopper{
+        width: 700px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box{
+        padding: 15px;
+        color: #347afcd3;
+        text-align: center;
+        font-weight: bold;
+    }
+    .box1{
+        background-color: #9bd9e994;
+        grid-column: 2/4;
+    }
+    .box2{
+        background-color: #7e2e1680;
+        grid-row: 1/4;
+        grid-row-start: 1;
+    }
+    .box3{
+        background-color: #ca797981;
+        grid-column: 2/4;
+        grid-row-start: 2;
+    }
+    .box4{
+        background-color: #473a92c0;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    </style>
+</head>
+<body>
+    <div id="whopper">
+        <div class="box box1">b1</div>
+        <div class="box box2">b2</div>
+        <div class="box box3">b3</div>
+        <div class="box box4">b4</div>
+    </div>
+</body>
+</html>

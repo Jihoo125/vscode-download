@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+        }
+
+        /* Styling for each div */
+        #ex div {
+            width: 100px;
+            height: 50px;
+            margin: 5px 10px;
+            padding: 5px;
+            color: #10ffacde;
+            background-color: #f3ace7f5;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            animation: grow-shrink 0.5s infinite;
+            position: relative;
+            z-index: 1; /* Make sure divs are below the image */
+        }
+
+        /* Styling for the image placed on top of each div */
+        #ex div img {
+            width: 100px; /* Match the div width */
+            height: 200px; /* Match the div height */
+            transform: rotate(90deg); /* Rotate the image */
+            position: absolute; /* Position the image above the div */
+            top: -100px; /* Move the image above the div */
+            left: 20px;
+            z-index: 2; /* Make sure the image stays above the div content */
+        }
+
+        /* Keyframe animation for divs */
+        @keyframes grow-shrink {
+            0%, 100% {
+                height: 50px;
+            }
+            50% {
+                height: 900px;
+            }
+        }
+
+        /* Different easing options for each div */
+        #ex .ease {
+            animation-timing-function: ease;
+        }
+        #ex .linear {
+            animation-timing-function: linear;
+        }
+        #ex .ease-in {
+            animation-timing-function: ease-in;
+        }
+        #ex .ease-out {
+            animation-timing-function: ease-out;
+        }
+        #ex .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="ex">
+        <div class="ease">
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
+            ease
+        </div>
+        <div class="linear">
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
+            linear
+        </div>
+        <div class="ease-in">
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
+            ease-in
+        </div>
+        <div class="ease-out">
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
+            ease-out
+        </div>
+        <div class="ease-in-out">
+            <img src="./pasta.jpg" alt="Foreground"> <!-- Image placed above the div -->
+            ease-in-out
+        </div>
+    </div>
+</body>
+</html>

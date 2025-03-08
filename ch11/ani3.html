@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			margin: 60px auto;
+			animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+		}
+		@keyframes rotate{
+			0%{
+				transform: perspective(120px) rotateX(4789123deg) rotateY(34819556deg);
+			}
+			50%{
+				transform: perspective(120px) rotateX(4612738deg) rotateY(54631094deg);
+			}
+			100%{
+				transform: perspectve(120px) rotateX(5671019deg) rotateY(367841034deg);
+			}
+		@keyframes background{
+			0%{
+				background-color: #1cdfab9a;
+			}
+			50%{
+				background-color: #acf7dee3;
+			}
+			100%{
+				background-color: #5facebca;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+<html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px; /* Makes the page long enough to scroll */
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        /* Main Image to fill the unused space at the top */
+        #main {
+            position: fixed; /* Keep the image fixed at the top */
+            top: 0;
+            left: 0;
+            width: 100%; /* Fill the full width */
+            height: 50vh; /* Fill the top half of the viewport height */
+            object-fit: cover; /* Ensures the image covers the space without stretching */
+            z-index: 10; /* Place the image behind the content */
+        }
+
+        p{
+            position: sticky;
+            top: 50px;
+            transition: transform 0.3s ease-in-out;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        p, img {
+            transform: translateY(0);
+        }
+
+        /* Add scroll effect for elements below */
+        body {
+            animation: moveOnScroll 5s infinite;
+        }
+
+        @keyframes moveOnScroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="main" src="./main.png" alt="Main Image">
+    <p>Windows 7 SP1 success!</p>
+    <img src="./1733736628523.jpg" alt="Secondary Image">
+    <p>Specifications:</p>
+    <p>Motherboard:</p>
+    <p>ASRock H310CM-HDV</p>
+    <p>CPU:</p>
+    <p>Intel Celeron G4900</p>
+    <p>GPU:</p>
+    <p>Intel Graphics UHD 610</p>
+    <p>RAM:</p>
+    <p>Samsung DDR4-2400 4GB (4GB*1)</p>
+    <p>HDD:</p>
+    <p>WDC WDS120G1GOA-00SS50 120GB</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+         width: 600px;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: minmax(100px, auto);
+       }
+       .items{
+         padding:10px;
+         background-color: #e7fc2a3f;
+       }   
+       .items:nth-child(odd){
+         background-color: #31adcdfd;
+       }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">abd</div>
+        <div class="items">abd</div>
+        <div class="items">abd</div>
+        <div class="items">abd</div>
+        <div class="items">abd</div>
+    </div>
+</body>
+</html>

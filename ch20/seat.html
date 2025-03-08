@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadium Seat Map</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            width: 90vmin;
+            height: 90vmin;
+        }
+        .seat {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #47ade382;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .empty {
+            background: rgba(71, 173, 227, 0.3); /* Faded for empty seats */
+        }
+    </style>
+</head>
+<body>
+    <h1>Stadium Seat Map</h1>
+    <div class="container" id="seatContainer"></div>
+
+    <script>
+        function getRowLabel(index) {
+            let label = "";
+            while (index >= 0) {
+                label = String.fromCharCode(65 + (index % 26)) + label;
+                index = Math.floor(index / 26) - 1;
+            }
+            return label;
+        }
+
+        var humanCount = parseInt(prompt("Total number of humans?"));
+        var rowNum = parseInt(prompt("How many rows? (Enter 0 to auto-calculate)"));
+        var colNum = parseInt(prompt("How many humans per row? (Enter 0 to auto-calculate)"));
+
+        // Auto-calculate missing value
+        if (rowNum === 0 && colNum > 0) {
+            rowNum = Math.ceil(humanCount / colNum);
+        } else if (colNum === 0 && rowNum > 0) {
+            colNum = Math.ceil(humanCount / rowNum);
+        }
+
+        var totalSeats = rowNum * colNum; // Max seats possible
+        var emptySeats = totalSeats - humanCount; // Calculate empty seats
+
+        var container = document.getElementById("seatContainer");
+        var maxRadius = 40; // Maximum radius in vmin
+        var minRadius = 10; // Minimum inner radius
+
+        var seatCounter = 1; // Track assigned seats
+
+        for (let r = 0; r < rowNum; r++) {
+            let rowLabel = getRowLabel(r); // Get A, B, C, ..., AA, AB, etc.
+            let radius = minRadius + (maxRadius - minRadius) * (r / (rowNum - 1)); // Increase radius per row
+
+            for (let s = 0; s < colNum; s++) {
+                let angle = (s / colNum) * (2 * Math.PI);
+                let x = 45 + radius * Math.cos(angle);
+                let y = 45 + radius * Math.sin(angle);
+
+                let seat = document.createElement("div");
+                seat.className = "seat";
+                seat.style.left = `${x}vmin`;
+                seat.style.top = `${y}vmin`;
+
+                if (seatCounter <= humanCount) {
+                    seat.innerText = `${rowLabel}${s + 1}`;
+                    seatCounter++;
+                } else {
+                    seat.classList.add("empty"); // Mark as empty
+                }
+
+                container.appendChild(seat);
+            }
+        }
+    </script>
+</body>
+</html>

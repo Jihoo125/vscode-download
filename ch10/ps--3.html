@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .container ul li{
+            margin: 15px;
+        }
+        .container ul li.new::before{
+            content: "NEW!!!!!!!!!!!!!!!!!!!!!!!";
+            font-size: x-small;
+            padding: 2px 4px;
+            margin: 0 10px;
+            border-radius: 2px;
+            background: #2adf8cb3;
+            color: #9fadfcbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>제품목록</h1>
+        <ul>
+            <li class="new">Intel Celeron G4900</li>
+            <!-- <li>Intel Celeron G4900</li> -->
+            <li class="new">AMD Radeon 6900XT</li>
+            <!-- <li>AMD Radeon 6900XT</li> -->
+        </ul>
+    </div>
+</body>
+</html>

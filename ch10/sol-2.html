@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .top-menu{
+            margin: 50px auto;
+            padding: 0;
+            list-style: none;
+            width: 605px;
+            height: 35px;
+            box-shadow: 0 3px 4px #dcb402e1;
+            background-color: #90acdffc;
+        }
+        .top-menu li{
+            float: left;
+            border-right: 1px solid #408acfde;
+        }
+        .top-menu li a:link{
+            color: #01234567;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+        }
+        .top-menu li a:visited{
+            color: #01234567;
+        }
+        .top-menu li:last-child{
+            border-right: none;
+        }
+        .top-menu li:not(:last-child) a:hover{
+            background-color: #8a0cdf97;
+            color: #3a3a4aea;
+        }
+        .top-menu li:last-child a:hover{
+            background-color: #10293847;
+            color: #3a3a4aea;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

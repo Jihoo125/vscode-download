@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contents{
+            display: none;
+            margin: 30px auto;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #00faddaf;
+            border-radius: 5px;
+        }
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .navi{
+            width: 960px;
+            height: 60px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3f1afd97;
+        }
+        .navi ul{
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        .navi ul li{
+            display: inline-block;
+            width: 150px;
+            padding: 10px;
+        }
+        .navi a:link, .navi a:visited{
+            font-size: 14px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .navi a:hover, .navi a:focus{
+            background-color: #423fdadf;
+            color: #937addaf;
+        }
+        .navi a:active{
+            background-color: #1addfff1;
+        }
+        #intro:target{
+             background-color: #a8c08caf;
+             color: #4a69aab2;
+        }
+        #room:target{
+            background-color: #9ae65c91;
+        }
+        #res:target{
+            background-color: #d14c4c98;
+        }
+
+        #signup fieldset:first-of-type label{
+            float: left;
+            font-size: 13px;
+            width: 60px;
+        }
+        #signup input:not([type = radio]){
+            border: 1px solid #9a69aab2;
+            border-radius: 3px;
+            padding: 5px;
+            width: 200px;
+        }
+        #signup input:checked + label{
+            color: #780a71dd;
+            font-weight: bold;
+        }
+        #signup b{
+            float: left;
+            font-size: 13px;
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="#intro" onclick="showSection('intro')">Start</a></li>
+                <li><a href="#room" onclick="showSection('room')">C rooms</a></li>
+                <li><a href="#res" onclick="showSection('res')">Reservation info</a></li>
+                <li><a href="https://www.onlinegdb.com/online_c_compiler">Reservation Here</a></li>
+            </ul>
+        </nav>
+
+        <form action="save.php" method="post" id="signup">
+            <fieldset>
+            <legend>개인정보</legend>
+                <label for="nm">
+                    이름
+                </label>
+                <input type="text" required placeholder="홍길동" id="nm">
+                <label for="m">이메일</label>
+                <input type="email" required id="m" placeholder="example@example.kr">
+                <label for="usr_tel">전화 번호</label>            
+                <input type="tel" required placeholder="+82 10-1234-1234" id="usr_tel">
+        </legend></fieldset>
+        <legend>객실형태</legend><fieldset>
+            <ul>
+                <li>
+                    <input type="radio" name="room" id="basic">
+                    <label for="basic">기본형 (3000인)</label>
+                </li>
+                <li>
+                    <input type="radio" name="room" id="advanced">
+                    <label for="advanced">고급형 (7000000인)</label>
+                </li>
+            </ul>
+
+        </fieldset>
+        <legend><fieldset>
+                <input type="submit" required>
+            </legend></fieldset>
+            </form>
+
+        <div id="intro" class="contents">
+            <h2>Start</h2>
+            <p>Hello</p>
+        </div>
+        <div id="room" class="contents">
+            <h2>C rooms</h2>
+            <p>For C enthusists</p>
+        </div>
+        <div id="res" class="contents">
+            <h2>Reservation Info</h2>
+            <p>Click on the Reservation Here.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const contents = document.querySelectorAll('.contents');
+            contents.forEach(content => content.style.display = 'none');
+
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

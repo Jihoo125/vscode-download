@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+</head>
+<body>
+  <h1>레드향</h1>
+  <p>껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+  <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+  <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+  <form id="hi">
+    <fieldset>
+      <legend>login</legend>
+      <ul>
+      <label for="1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1">id</label>
+      <input type="text" pattern="[a-zA-Z0-9]{6,25}" id="1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1" />
+      <label for="1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2">pass</label>
+      <input type="text" pattern="[a-zA-Z0-9!@#$%^*_|]{6,25}" id="1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_2" />
+      <div id="hiddenContent" style="display: none;">
+        <input type="submit" value="Submit">
+        <input type="button" value="Cancel" id="cancelButton">
+    </div>
+    <input type="button" id="showMoreButton" value="Show More">
+</div>
+      </ul>
+    </fieldset>
+  </form>
+  <script>
+    document.getElementById("showMoreButton").addEventListener("click", function() {
+        var hiddenContent = document.getElementById("hiddenContent");
+        if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+            hiddenContent.style.display = "block";
+            this.value = "Show Less";
+        } else {
+            hiddenContent.style.display = "none";
+            this.value = "Show More";
+        }
+    });
+
+    document.getElementById("cancelButton").addEventListener("click", function() {
+        var hiddenContent = document.getElementById("hiddenContent");
+        hiddenContent.style.display = "none";
+        document.getElementById("showMoreButton").value = "Show More";
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var userId = document.getElementById("userId").value;
+        var password = document.getElementById("password").value;
+
+        // Send data to server
+        fetch('http://localhost:3000/save', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ userId, password })
+        })
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+
+        // Optionally hide the content after submit
+        var hiddenContent = document.getElementById("hiddenContent");
+        hiddenContent.style.display = "none";
+        document.getElementById("showMoreButton").value = "Show More";
+    });
+</script>
+</body>
+</html>

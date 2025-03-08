@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function addNumber(){ 								
+    var sum = 10 + 20;			
+	}
+    addNumber();
+    console.log(sum);  
+    const synth = window.speechSynthesis // 설정하다 TTS
+let ourText = "message" //메시지 넣다
+const utterThis = new SpeechSynthesisUtterance(ourText) // TTS 설정하다
+synth.speak(utterThis) // TTS 말하다
+    </script>
+</body>
+</html>
