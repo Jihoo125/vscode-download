@@ -14,12 +14,16 @@
         document.write(`num+char = ${nC} char+num = ${cN}`);
         var s1 = num.join();
         var s2 = num.join("/");
-        document.write(`no/ ${s1}`)
-        document.write(`/ ${s2}`)
+        document.write(`no/ ${s1}`);
+        document.write(`/ ${s2}`);
         var r1 = num.push(4, 5);
-        var r2 = num.unshift(0)
-        document.write(`l: ${r1} = ${num}`)
-        document.write(`l: ${r2} = ${num}`)
+        var r2 = num.unshift(0);
+        document.write(`l: ${r1} = ${num}`);
+        document.write(`l: ${r2} = ${num}`);
+        var p1 = chars.pop();
+        var p2 = chars.shift();
+        document.write(`p ${p1} chars ${chars}`)
+        document.write(`p ${p2} chars ${chars}`)
     </script>
 </body>
 </html>
