@@ -1,0 +1,1 @@
+var birthDateOfUserByUsingJSPromptFunction = prompt("출생년도");
