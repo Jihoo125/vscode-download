@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현재 시각</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    p{
+      font-size: 1.2em;
+    }
+    .display{
+      font-size: .5em; 
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>현재 시각 <span id="current" class="display"></span></p>
+  </div>
+
+  <script>
+    setInterval(displayNow, 1000);  
+
+    function displayNow() {  
+      var now = new Date(); 
+      var currentTime = now.toLocaleTimeString();
+
+      document.querySelector("#current").innerHTML = currentTime;
+    }
+  </script>
+</body>
+</html>
